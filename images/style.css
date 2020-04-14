@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #F2FBFE;
+}
+
+header {
+    background: #24B6F7;
+    padding: 20px 0px 10px 0px;
+}
+nav {
+    display: inline-block;
+    text-decoration: none;
+}
+    nav > ul {
+        list-style: none;
+        margin: auto;
+        padding: 0px 20px;
+    }
+    nav > ul > li {
+        display: inline-block;
+        color: white;
+        text-shadow: 0px 3px 6px #0000007C;
+        margin: auto;
+        padding: 0px 5px;
+    }
+    nav > ul > li.left {
+        float: left;
+        max-width: 300px;
+        margin-top: 20px;
+    }
+    nav > ul > li.right {
+        float: right;
+        max-width: 300px;
+        margin-top: 20px;
+    }
+    nav > ul > li:hover {
+        color: #003143;
+        text-shadow: 0px 3px 6px #0000007C;
+    }
+
+main {
+    background-image: linear-gradient(to bottom, #24B6F7, #24B6F7, #D0EFFD, #F2FBFE);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    div.content {
+        text-align: right;
+        padding-top: 0px;
+        margin-right: 3%;
+        float: right;
+        clear: right;
+    }
+    div.content > p {
+        width: 512px;
+        left: 639px;
+        float: right;
+        clear: right;
+        vertical-align: right;
+    }
+    div.content > button {
+        background-color: rgb(56, 195, 255);
+        color: white;
+        box-shadow: 0px 0px 2px #00000029;
+        border: 1px solid #24b6f7;
+        border-radius: 9px;
+        opacity: 1;
+    }
+div.Img {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+section.Work {
+    text-align: left;
+    float: left;
+    clear: left;
+}
+    div.Work > p {
+        width: 30%;  
+        float: left;
+        clear: left;  
+    }
+    div.row {
+        clear: right;
+        float: right;
+    }
+    .container_01 {
+        position: relative;
+        color: white;
+        text-align: right;
+    }
+        .container_01:hover {
+           content: url("images/CaseStudyOneHover.png") no-repeat;
+            text-shadow: 0px 3px 6px #0000007C;
+        }
+    .container_02 {
+        position: relative;
+        color: white;
+        text-align: right;
+    }
+        .container_02:hover {
+            background-image: image(case);
+            text-shadow: 0px 3px 6px #0000007C;
+        }
+    .container_03 {
+        position: relative;
+        color: white;
+        text-align: right;
+    }
+        .container_03:hover {
+            background-image: image(case);
+            text-shadow: 0px 3px 6px #0000007C;
+        }
+    .container_04 {
+        position: relative;
+        color: white;
+        text-align: right;
+    }
+        .container_04:hover {
+            background-image: image(case);
+            text-shadow: 0px 3px 6px #0000007C;
+        }
+
+/* insert section elements here*/
+hr {
+    width: 62%;
+    height: 1px;
+    background-color: #0089C6;
+    margin-right: auto;
+    margin-left: auto;
+    border-width: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    }
+

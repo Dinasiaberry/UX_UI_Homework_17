@@ -46,6 +46,9 @@ main {
     background-repeat: no-repeat;
     background-position: center;
 }
+    div.MyImage {
+       padding-left: ; 
+    }
     div.content {
         text-align: right;
         padding-top: 0px;
@@ -70,59 +73,67 @@ main {
     }
 div.Img {
     display: block;
+    padding-top: 5%;
     margin: auto;
     text-align: center;
 }
 
-section.Work {
+section.MyWork {
+    margin-top: 5%;
+    display: grid;
+    vertical-align: text-top;
+
+}
+section > div.Work {
     text-align: left;
     float: left;
     clear: left;
+    margin-left: 3%;
 }
     div.Work > p {
-        width: 30%;  
+        width: 23%;  
         float: left;
-        clear: left;  
+        clear: left;
+        text-align: left; 
+        vertical-align: top;
     }
-    div.row {
-        clear: right;
-        float: right;
-    }
-    .container_01 {
+div.row {
+    clear: right;
+    float: right;
+    margin-right: 3%;
+    vertical-align: top;
+}
+    div.container_01 {
         position: relative;
         color: white;
         text-align: right;
     }
-        .container_01:hover {
-           content: url("images/CaseStudyOneHover.png") no-repeat;
-            text-shadow: 0px 3px 6px #0000007C;
+        div.container_01:hover {
+           content: url("images/CaseStudyOneHover.png")
         }
-    .container_02 {
+    div.container_02 {
         position: relative;
         color: white;
         text-align: right;
     }
-        .container_02:hover {
-            background-image: image(case);
-            text-shadow: 0px 3px 6px #0000007C;
+        div.container_02:hover {
+            content: url("images/CaseStudyTwoHover.png")
         }
-    .container_03 {
+    div.container_03 {
         position: relative;
         color: white;
         text-align: right;
     }
-        .container_03:hover {
-            background-image: image(case);
-            text-shadow: 0px 3px 6px #0000007C;
+        div.container_03:hover {
+            content: url("images/CaseStudyThreeHover.png")
         }
-    .container_04 {
+    div.container_04 {
         position: relative;
         color: white;
         text-align: right;
     }
-        .container_04:hover {
-            background-image: image(case);
-            text-shadow: 0px 3px 6px #0000007C;
+        div.container_04:hover {
+            content: url("images/CaseStudyFourHover.png")
         }
 
 /* insert section elements here*/
@@ -133,7 +144,72 @@ hr {
     margin-right: auto;
     margin-left: auto;
     border-width: none;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px;
     }
 
+section.MyDesign {
+        margin-top: 5%;
+        display: grid;
+        vertical-align: text-top;
+}
+    div.Design > p {
+        width: 23%;  
+        float: left;
+        clear: left;
+        text-align: left; 
+        vertical-align: top;
+    }
+    div.rows {
+        clear: right;
+        float: right;
+        margin-right: 3%;
+        vertical-align: top;
+    }
+        div.flex-container_01 {
+            position: relative;
+            color: white;
+            text-align: right;
+        }
+            div.flex-container_01:hover {
+               content: url("images/CaseStudyOneHover.png")
+            }
+        div.flex-container_02 {
+            position: relative;
+            color: white;
+            text-align: right;
+        }
+            div.flex-container_02:hover {
+                content: url("images/CaseStudyTwoHover.png")
+            }
+        div.flex-container_03 {
+            position: relative;
+            color: white;
+            text-align: right;
+        }
+            div.flex-container_03:hover {
+                content: url("images/CaseStudyThreeHover.png")
+            }
+        div.flex-container_04 {
+            position: relative;
+            color: white;
+            text-align: right;
+        }
+            div.flex-container_04:hover {
+                content: url("images/CaseStudyFourHover.png")
+            }
+        div.flex-container_05 {
+            position: relative;
+            color: white;
+            text-align: right;
+        }
+            div.flex-container_05:hover {
+                content: url("images/CaseStudyFourHover.png")
+            }
+        div.flex-container_06 {
+            position: relative;
+            color: white;
+            text-align: right;
+        }
+            div.flex-container_06:hover {
+                content: url("images/CaseStudyFourHover.png")
+            }

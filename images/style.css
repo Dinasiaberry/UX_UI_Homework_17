@@ -1,215 +1,392 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #F2FBFE;
 }
 
-header {
-    background: #24B6F7;
-    padding: 20px 0px 10px 0px;
+/*images constraints*/
+p {
+    font-size: 14px;
 }
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 25px;
+}
+
+#button {
+    width: 9.9%;
+    height: auto;
+    max-width: 135px;
+    position: absolute;
+}
+/*Content Visuals*/
+
 nav {
-    display: inline-block;
-    text-decoration: none;
+    background: #24B6F7;
+    margin: auto;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
-    nav > ul {
-        list-style: none;
-        margin: auto;
-        padding: 0px 20px;
+    nav > div#Navbar {
+        display: flex;
+        flex-direction: row;
     }
-    nav > ul > li {
-        display: inline-block;
+    #NavLogo {
+        width: 3%;
+        height: auto;
+        position: absolute;
+        display: flex;
+    }
+    #Navbar > div.left > p {
+        text-decoration: none;
         color: white;
         text-shadow: 0px 3px 6px #0000007C;
-        margin: auto;
-        padding: 0px 5px;
     }
-    nav > ul > li.left {
-        float: left;
-        max-width: 300px;
-        margin-top: 20px;
-    }
-    nav > ul > li.right {
-        float: right;
-        max-width: 300px;
-        margin-top: 20px;
-    }
-    nav > ul > li:hover {
-        color: #003143;
-        text-shadow: 0px 3px 6px #0000007C;
-    }
+        #Navbar > div.left {
+            display: flex;
+            width: 40%;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-evenly;
+        }
+        #Navbar > div.left > p:hover {
+            color: #003143;
+            text-shadow: 0px 3px 6px #0000007C;
+        }
+        #Navbar > div.right > p {
+            text-decoration: none;
+            color: white;
+            text-shadow: 0px 3px 6px #0000007C;
+        }
+        #Navbar > div.right {
+            display: flex;
+            width: 65%;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        #Navbar > div.right > p:hover {
+            color: #003143;
+            text-shadow: 0px 3px 6px #0000007C;
+        }
 
 main {
     background-image: linear-gradient(to bottom, #24B6F7, #24B6F7, #D0EFFD, #F2FBFE);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
-    div.MyImage {
-       padding-left: ; 
+    main > div.heroImg {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5%;
     }
-    div.content {
+    main > div.heroImg > img#MyImage {
+        width: 30%;
+        height: auto;
+        position: absolute;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    main > div.heroImg > div.content {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+     }
+    main > div.heroImg > div.content > p {
+        width: 50%;
         text-align: right;
-        padding-top: 0px;
-        margin-right: 3%;
-        float: right;
-        clear: right;
+        
     }
-    div.content > p {
-        width: 512px;
-        left: 639px;
-        float: right;
-        clear: right;
-        vertical-align: right;
+    main > div.heroImg > div.content > button {
+        background-color: rgb(56, 195, 255);
+        color: white;
+        box-shadow: 0px 0px 2px #00000029;
+        border: 1px solid #24b6f7;
+        border-radius: 9px;
+        margin-top: 5%;
     }
-    div.content > button {
+    main > img#Img {
+        display: flex;
+        margin: auto;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+
+section.MyWork {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+    #Work {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    display: flex;
+    }
+    section.MyWork > div#row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    section.MyWork > div#myWork > div.Work {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 30%;
+        height: 30%;
+    }
+    section > div#myWork > div.Work > p {  
+            width: 30%;
+            text-align: left; 
+            height: 25%;
+            position: absolute;
+            flex-wrap: wrap;
+        }
+    section > div#myWork > div.column {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 30%;
+        flex: 25%;
+    }
+        div.container_01 {
+            height: auto;
+            width: 75%;
+            display: flex;
+            margin-bottom: 30%;
+            position: absolute;
+        }
+            /*div.container_01:hover {
+            content: url("#")
+            }*/
+        div.container_02 {
+            height: auto;
+            width: 75%;
+            display: flex;
+            margin-bottom: 30%;
+            position: absolute;
+        }
+            /*div.container_02:hover {
+                content: url("#")
+            }*/
+        div.container_03 {
+            height: auto;
+            width: 75%;
+            display: flex;
+            margin-bottom: 30%;
+            position: absolute;
+        }
+            /*div.container_03:hover {
+                content: url("#")
+            }*/
+        div.container_04 {
+            height: auto;
+            width: 75%;
+            display: flex;
+            margin-bottom: 30%;
+            position: absolute;
+        }
+        /*div.container_04:hover {
+            content: url("#")
+        }*/
+        section.MyWork > hr {
+            width: 62%;
+            height: 1px;
+            background-color: #0089C6;
+            margin: auto;
+            border-width: none;
+            display: flex;
+            text-align: center;
+            margin-top: 10%;
+            }
+
+section.MyDesign {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+}
+    #Design {
+        width: 40.5%;
+        height: auto;
+        display: flex;
+        position: absolute;
+    }
+    section.MyDesign > div#row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    section.MyDesign > div#row > div.Design {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+    }
+    section.MyDesign > div#row > div.Design > p {
+        width: 23%;
+        height: 25%; 
+        text-align: left; 
+    }
+        div.rows > div.column {
+            float: right;
+            width: 33.33%;
+            padding: auto; 
+            display: flex;
+            flex-direction: column; 
+        }
+        div.flex-container_01 {
+            position: relative;
+            color: white;
+            text-align: right;
+        }
+            /*div.flex-container_01:hover {
+               content: url("images/CaseStudyOneHover.png")
+            }*/
+        div.flex-container_02 {
+            position: relative;
+            color: white;
+            text-align: right;
+        }
+            /*div.flex-container_02:hover {
+                content: url("images/CaseStudyTwoHover.png")
+            }*/
+        div.flex-container_03 {
+            position: relative;
+            color: white;
+            text-align: right;
+        }
+            /*div.flex-container_03:hover {
+                content: url("images/CaseStudyThreeHover.png")
+            }*/
+        div.flex-container_04 {
+            position: relative;
+            color: white;
+            text-align: right;
+        }
+            /*div.flex-container_04:hover {
+                content: url("images/CaseStudyFourHover.png")
+            }*/
+        div.flex-container_05 {
+            position: relative;
+            color: white;
+            text-align: right;
+        }
+            /*div.flex-container_05:hover {
+                content: url("images/CaseStudyFourHover.png")
+            }*/
+        div.flex-container_06 {
+            position: relative;
+            color: white;
+            text-align: right;
+        }
+            /*div.flex-container_06:hover {
+                content: url("images/CaseStudyFourHover.png")
+            }*/
+    div.rows > button {
         background-color: rgb(56, 195, 255);
         color: white;
         box-shadow: 0px 0px 2px #00000029;
         border: 1px solid #24b6f7;
         border-radius: 9px;
         opacity: 1;
+        vertical-align: center;
     }
-div.Img {
-    display: block;
-    padding-top: 5%;
+
+section.MyContact {
+    display: flex;
+    flex-direction: row;
     margin: auto;
-    text-align: center;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
-
-section.MyWork {
-    margin-top: 5%;
-    display: grid;
-    vertical-align: text-top;
-
-}
-section > div.Work {
-    text-align: left;
-    float: left;
-    clear: left;
-    margin-left: 3%;
-}
-    div.Work > p {
-        width: 23%;  
-        float: left;
-        clear: left;
-        text-align: left; 
-        vertical-align: top;
+    #contact {
+        width: 5.1%;
+        height: auto;
+        max-width: 70px;
+        position: absolute;
     }
-div.row {
-    clear: right;
-    float: right;
-    margin-right: 3%;
-    vertical-align: top;
-}
-    div.container_01 {
-        position: relative;
-        color: white;
-        text-align: right;
+    section.MyContact > ul > li {
+        vertical-align: center;
     }
-        div.container_01:hover {
-           content: url("images/CaseStudyOneHover.png")
+    section.MyContact > br {
+            display: block;
+            margin-bottom: 28px;
+            font-size: 28px;
+            line-height: 28px;
         }
-    div.container_02 {
-        position: relative;
-        color: white;
-        text-align: right;
-    }
-        div.container_02:hover {
-            content: url("images/CaseStudyTwoHover.png")
+        .ContactLinks {
+            background-image: linear-gradient(to top,#24B6F7, #24B6F7, #D0EFFD, #F2FBFE);
         }
-    div.container_03 {
-        position: relative;
-        color: white;
-        text-align: right;
-    }
-        div.container_03:hover {
-            content: url("images/CaseStudyThreeHover.png")
+        .ContactLinks > h3 {
+            margin-left: 20px;
         }
-    div.container_04 {
-        position: relative;
-        color: white;
-        text-align: right;
-    }
-        div.container_04:hover {
-            content: url("images/CaseStudyFourHover.png")
+        .ContactLinks > ul > li {
+            margin: auto;
+            padding: 0px 5px;
+            margin-right: 3%;
         }
 
-/* insert section elements here*/
-hr {
-    width: 62%;
-    height: 1px;
-    background-color: #0089C6;
-    margin-right: auto;
-    margin-left: auto;
-    border-width: none;
-    margin: 50px;
+footer {
+        background: #24B6F7;
+        margin: auto;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
-
-section.MyDesign {
-        margin-top: 5%;
-        display: grid;
-        vertical-align: text-top;
-}
-    div.Design > p {
-        width: 23%;  
-        float: left;
-        clear: left;
-        text-align: left; 
-        vertical-align: top;
-    }
-    div.rows {
-        clear: right;
-        float: right;
-        margin-right: 3%;
-        vertical-align: top;
-    }
-        div.flex-container_01 {
-            position: relative;
-            color: white;
-            text-align: right;
+        #FootLogo {
+            width: 8%;
+            height: auto;
+            display: flex;
+            position: absolute;
         }
-            div.flex-container_01:hover {
-               content: url("images/CaseStudyOneHover.png")
-            }
-        div.flex-container_02 {
-            position: relative;
-            color: white;
-            text-align: right;
+        footer > div.footer {
+            display: flex;
+            flex-direction: row;
         }
-            div.flex-container_02:hover {
-                content: url("images/CaseStudyTwoHover.png")
-            }
-        div.flex-container_03 {
-            position: relative;
+        
+        footer > div.footerlogo > p {
+            text-decoration: none;
             color: white;
-            text-align: right;
+            text-shadow: 0px 3px 6px #0000007C;
         }
-            div.flex-container_03:hover {
-                content: url("images/CaseStudyThreeHover.png")
-            }
-        div.flex-container_04 {
-            position: relative;
-            color: white;
-            text-align: right;
+        footer > div.top {
+            display: flex;
+            width: 65%;
+            align-items: flex-start;
+            justify-content: flex-end;
         }
-            div.flex-container_04:hover {
-                content: url("images/CaseStudyFourHover.png")
-            }
-        div.flex-container_05 {
-            position: relative;
-            color: white;
-            text-align: right;
+        footer > div.top > li:hover {
+            color: #003143;
+            text-shadow: 0px 3px 6px #0000007C;
         }
-            div.flex-container_05:hover {
-                content: url("images/CaseStudyFourHover.png")
-            }
-        div.flex-container_06 {
-            position: relative;
-            color: white;
-            text-align: right;
+        footer > div.bottom {
+            display: flex;
+            width: 65%;
+            align-items: flex-end;
+            justify-content: flex-end;
         }
-            div.flex-container_06:hover {
-                content: url("images/CaseStudyFourHover.png")
-            }
+        footer > div.bottom > li:hover {
+            color: #003143;
+            text-shadow: 0px 3px 6px #0000007C;
+        }
